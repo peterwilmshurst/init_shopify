@@ -1,0 +1,5 @@
+.image-slider {
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
+    }
+}

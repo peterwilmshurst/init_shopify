@@ -1,0 +1,5 @@
+node_modules
+config.yml
+.DS_Store
+variables
+assets

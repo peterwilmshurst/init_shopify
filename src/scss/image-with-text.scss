@@ -1,0 +1,41 @@
+.image-with-text {
+
+    @include make-row('no-gutters');
+
+    @extend .align-items-center;
+
+    &__image {
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(12);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(6);
+        }
+
+        @extend .order-first;
+        
+        @include media-breakpoint-up(md) {
+            order: initial;
+        }
+    }
+
+    &__text {
+        @include make-col-ready();
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(12);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(6);
+        }
+
+        @extend .order-last;
+
+        @include media-breakpoint-up(md) {
+        order: initial;
+    }
+    }
+}
